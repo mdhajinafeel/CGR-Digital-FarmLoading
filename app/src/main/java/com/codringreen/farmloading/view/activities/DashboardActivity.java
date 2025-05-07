@@ -1,9 +1,6 @@
 package com.codringreen.farmloading.view.activities;
 
 import android.Manifest;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -27,7 +24,6 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.app.ActivityCompat;
-import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -37,6 +33,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.codringreen.farmloading.BuildConfig;
 import com.codringreen.farmloading.R;
+import com.codringreen.farmloading.constants.IAPIConstants;
 import com.codringreen.farmloading.constants.NavigationType;
 import com.codringreen.farmloading.helper.PreferenceManager;
 import com.codringreen.farmloading.model.FarmDetailDashboardModel;
@@ -329,7 +326,7 @@ public class DashboardActivity extends BaseActivity implements AdapterView.OnIte
         File externalStorageDirectory = Environment.getExternalStorageDirectory();
         File dataDirectory = Environment.getDataDirectory();
         String str = "cgr_farmloading" + ("_" + CommonUtils.convertTimeStampToDate(CommonUtils.getCurrentLocalDateTimeStamp(), "dd_MM_yyyy_HH_mm_ss_S")) + ".db";
-        File file = new File(dataDirectory, "/data/" + BuildConfig.APPLICATION_ID +"/databases/cgr_farmloadingv1.db");
+        File file = new File(dataDirectory, "/data/" + BuildConfig.APPLICATION_ID +"/databases/" + IAPIConstants.DBNAME + ".db");
         File file2 = new File(externalStorageDirectory + "/Codrin Green", str);
         File file3 = new File(externalStorageDirectory + "/Codrin Green");
         if (!file3.exists()) {

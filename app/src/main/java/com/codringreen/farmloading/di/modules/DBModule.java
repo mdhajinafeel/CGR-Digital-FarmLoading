@@ -4,6 +4,7 @@ import android.app.Application;
 
 import androidx.room.Room;
 
+import com.codringreen.farmloading.constants.IAPIConstants;
 import com.codringreen.farmloading.db.AppExecutors;
 import com.codringreen.farmloading.db.CGRFarmDatabase;
 import com.codringreen.farmloading.db.dao.FarmCapturedDataDao;
@@ -25,7 +26,7 @@ public class DBModule {
     @Provides
     @Singleton
     CGRFarmDatabase provideDatabase(Application application) {
-        return Room.databaseBuilder(application, CGRFarmDatabase.class, "cgr_farmloadingv1.db").allowMainThreadQueries().fallbackToDestructiveMigration().build();
+        return Room.databaseBuilder(application, CGRFarmDatabase.class, IAPIConstants.DBNAME + ".db").allowMainThreadQueries().fallbackToDestructiveMigration().build();
     }
 
     @Provides

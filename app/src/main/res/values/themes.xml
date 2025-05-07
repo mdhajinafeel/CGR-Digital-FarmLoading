@@ -8,6 +8,7 @@
         <item name="colorAccent">@color/colorPrimaryDark</item>
         <item name="colorPrimary">@color/notificationBarColor</item>
         <item name="colorPrimaryDark">@color/secondaryColor</item>
+        <item name="android:statusBarColor">@color/notificationBarColor</item>
     </style>
     <style name="TextHint">
         <item name="android:textSize">12sp</item>
