@@ -325,7 +325,7 @@ public class DashboardActivity extends BaseActivity implements AdapterView.OnIte
         }
         File externalStorageDirectory = Environment.getExternalStorageDirectory();
         File dataDirectory = Environment.getDataDirectory();
-        String str = "cgr_farmloading" + ("_" + CommonUtils.convertTimeStampToDate(CommonUtils.getCurrentLocalDateTimeStamp(), "dd_MM_yyyy_HH_mm_ss_S")) + ".db";
+        String str = "woodex_fincacarga" + ("_" + CommonUtils.convertTimeStampToDate(CommonUtils.getCurrentLocalDateTimeStamp(), "dd_MM_yyyy_HH_mm_ss_S")) + ".db";
         File file = new File(dataDirectory, "/data/" + BuildConfig.APPLICATION_ID +"/databases/" + IAPIConstants.DBNAME + ".db");
         File file2 = new File(externalStorageDirectory + "/WoodEx", str);
         File file3 = new File(externalStorageDirectory + "/WoodEx");
