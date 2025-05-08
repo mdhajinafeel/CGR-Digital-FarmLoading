@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:background="@color/notificationBarColor"
+    android:elevation="10dp"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/toolbar_logo"
-        android:layout_width="140dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="@dimen/padding_xmedium"
-        android:src="@drawable/cgrlogo" />
+        android:src="@drawable/woodexlogowhite" />
 </androidx.appcompat.widget.Toolbar>

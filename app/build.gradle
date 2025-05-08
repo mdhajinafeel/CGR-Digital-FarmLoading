@@ -38,7 +38,7 @@ android {
     productFlavors {
         dev {
             dimension "environment"
-            applicationId "com.codrindigital.farmloading.dev"
+            applicationId "com.woodex.farmloading.dev"
             versionNameSuffix "-dev"
             buildConfigField "String", "APPLICATION_NAME", "\"Finca Carga (Dev)\""
             buildConfigField "String", "APP_INSTANCE_PREFIX", "\"CGR_FARMLOADING-DEV\""
@@ -52,7 +52,7 @@ android {
 
         prod {
             dimension "environment"
-            applicationId "com.codrindigital.farmloading"
+            applicationId "com.woodex.farmloading"
             buildConfigField "String", "APPLICATION_NAME", "\"Finca Carga\""
             buildConfigField "String", "APP_INSTANCE_PREFIX", "\"CGR_FARMLOADING-Prod\""
             buildConfigField "String", "CLIENT_USERNAME", "\"codrindigitaladmin\""
@@ -65,7 +65,7 @@ android {
 
         demo {
             dimension "environment"
-            applicationId "com.codrindigital.farmloading.demo"
+            applicationId "com.woodex.farmloading.demo"
             buildConfigField "String", "APPLICATION_NAME", "\"Finca Carga - Demo\""
             buildConfigField "String", "APP_INSTANCE_PREFIX", "\"CGR_FARMLOADING-Demo\""
             buildConfigField "String", "CLIENT_USERNAME", "\"codrindigitaladmin\""

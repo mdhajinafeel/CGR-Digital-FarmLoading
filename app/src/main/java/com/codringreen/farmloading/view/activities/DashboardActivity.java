@@ -327,8 +327,8 @@ public class DashboardActivity extends BaseActivity implements AdapterView.OnIte
         File dataDirectory = Environment.getDataDirectory();
         String str = "cgr_farmloading" + ("_" + CommonUtils.convertTimeStampToDate(CommonUtils.getCurrentLocalDateTimeStamp(), "dd_MM_yyyy_HH_mm_ss_S")) + ".db";
         File file = new File(dataDirectory, "/data/" + BuildConfig.APPLICATION_ID +"/databases/" + IAPIConstants.DBNAME + ".db");
-        File file2 = new File(externalStorageDirectory + "/Codrin Green", str);
-        File file3 = new File(externalStorageDirectory + "/Codrin Green");
+        File file2 = new File(externalStorageDirectory + "/WoodEx", str);
+        File file3 = new File(externalStorageDirectory + "/WoodEx");
         if (!file3.exists()) {
             if (!file3.mkdir()) {
                 Log.e("DashboardActivity", "Failed to create directory: " + file3.getAbsolutePath());
@@ -352,7 +352,7 @@ public class DashboardActivity extends BaseActivity implements AdapterView.OnIte
                 FileChannel destinationChannel = fos.getChannel()
         ) {
             destinationChannel.transferFrom(sourceChannel, 0, sourceChannel.size());
-            Toast.makeText(this, getString(R.string.export_database), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.export_database_success), Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             Log.e("DashboardActivity", "Error in DashboardActivity exportDB", e);
         }

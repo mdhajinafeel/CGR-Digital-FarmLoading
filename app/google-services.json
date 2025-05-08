@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "285386053633",
-    "project_id": "cg-digital---farm-loading",
-    "storage_bucket": "cg-digital---farm-loading.firebasestorage.app"
+    "project_number": "399095653972",
+    "project_id": "woodex-farmloading",
+    "storage_bucket": "woodex-farmloading.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:285386053633:android:19c987fcff28724b2f0800",
+        "mobilesdk_app_id": "1:399095653972:android:39d2a38e51962951daefc1",
         "android_client_info": {
-          "package_name": "com.codrindigital.farmloading"
+          "package_name": "com.woodex.farmloading"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCE3rSnSxpNTsShnAUjKD7C9v1d9dOir0A"
+          "current_key": "AIzaSyA_M9nEs-bchMmkT2Mme3ohHgkHQQYurdo"
         }
       ],
       "services": {
@@ -26,15 +26,15 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:285386053633:android:5cbb9ce44f9a43f22f0800",
+        "mobilesdk_app_id": "1:399095653972:android:2c3625e7753b5bfcdaefc1",
         "android_client_info": {
-          "package_name": "com.codrindigital.farmloading.demo"
+          "package_name": "com.woodex.farmloading.demo"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCE3rSnSxpNTsShnAUjKD7C9v1d9dOir0A"
+          "current_key": "AIzaSyA_M9nEs-bchMmkT2Mme3ohHgkHQQYurdo"
         }
       ],
       "services": {
@@ -45,15 +45,15 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:285386053633:android:374acdb58db5bd2a2f0800",
+        "mobilesdk_app_id": "1:399095653972:android:d742f5c826880530daefc1",
         "android_client_info": {
-          "package_name": "com.codrindigital.farmloading.dev"
+          "package_name": "com.woodex.farmloading.dev"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCE3rSnSxpNTsShnAUjKD7C9v1d9dOir0A"
+          "current_key": "AIzaSyA_M9nEs-bchMmkT2Mme3ohHgkHQQYurdo"
         }
       ],
       "services": {
